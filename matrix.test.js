@@ -1,4 +1,6 @@
-const Matrix = require('./matrix.js');
+
+import Matrix from './matrix.js';
+import { expect } from 'jest';
 
 test('add scalar to matrix', () => {
   let m = new Matrix(3, 3);
@@ -11,7 +13,7 @@ test('add scalar to matrix', () => {
     cols: 3,
     data: [
       [3, 4, 5],
-      [5, 7, 8],
+      [6, 7, 8],
       [9, 10, 11],
     ],
   });
