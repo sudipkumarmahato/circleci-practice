@@ -36,3 +36,18 @@ workflows:
   orb-free-workflow:
     jobs:
       - test
+# Descriptions
+
+# This is a configuration file for CircleCI, a continuous integration and delivery platform. The configuration file is written in YAML and specifies how the pipeline should be executed.
+# It uses version 2.1 of the pipeline process engine, and defines a job called "test" which specifies an execution environment using a Docker image "cimg/node:18.10.0" and a series of steps that are executed as part of the job. The job includes steps such as checking out the code repository, restoring and saving a cache of dependencies, and running tests using the command "npm test".
+# The workflow "orb-free-workflow" includes the job "test" and jobs are invoked via workflows.
+# The steps in the job are as follows:
+
+# checkout: This step checks out the code from the repository
+# restore_cache: This step restores the cache of dependencies that were previously saved
+# run: This step runs the command "npm install" to install the packages
+# save_cache: This step saves the cache of dependencies
+# run: This step runs the command "npm test" to run the tests
+# The configuration file uses CircleCI's built-in features such as caching to improve performance, and allows you to customize the environment and commands used to run your tests.
+
+# In this configuration file, "orb-free-workflow" is the name of a workflow that is defined. Workflows in CircleCI allow you to specify a series of jobs that should be run together, and define the order in which they should be run. In this case, the workflow "orb-free-workflow" includes a single job called "test". This means that when this workflow is run, only the "test" job will be executed. The name "orb-free-workflow" suggests that it is a workflow that does not use CircleCI's "orbs" feature, which is a way to package and share reusable configuration elements across projects.
