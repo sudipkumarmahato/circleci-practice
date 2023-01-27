@@ -1,0 +1,18 @@
+{
+  "name": "ci-cd-tesing",
+  "version": "1.0.0",
+  "description": "its all about testing test testing test",
+  "main": "sketch.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "testing",
+    "test"
+  ],
+  "author": "sudip kumar mahato",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.4.0"
+  }
+}
